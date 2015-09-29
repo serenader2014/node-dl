@@ -1,0 +1,8 @@
+{
+    "name": "node-dl",
+    "version": "0.0.1",
+    "author": "serenader",
+    "dependencies": {
+        "socket.io-client": "latest"
+    }
+}
