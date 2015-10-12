@@ -5,7 +5,11 @@ head
     title Node Downloader
 body
     input(type='text', name='url')/
-    button(type='submit') download
+    button.download(type='submit') download
+    button.cancel cancel download
+    button.stop stop
+    button.resume resume
+    div.progress
 
     script(src='lib/socket.io-client/socket.io.js')
     script(src='script/index.js')

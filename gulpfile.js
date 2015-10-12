@@ -42,7 +42,7 @@ gulp.task('runServer', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['views/assets/*.jade', 'views/assets/script/*.js'])
+    gulp.watch(['views/*.jade', 'views/assets/script/*.js'])
     .on('change', browserSync.reload);
 
     gulp.watch(['index.js'])
@@ -64,3 +64,5 @@ gulp.task('serve', ['runServer', 'watch'], function () {
         }
     });
 });
+
+gulp.task('default', ['serve']);
